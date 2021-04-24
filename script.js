@@ -1,9 +1,11 @@
+// Storing message components
 const messageComponents = {
     firstPart: ['Inspire', 'Motivate', 'Excite'],
     secondPart: ['your friends', 'your colleagues', 'your family'],
     thirdPart: ['to do great things', 'to be there for others', 'to create something new']
 };
 
+// Create and print random message
 function createRandomMessage() {
     selectFirstPart = messageComponents.firstPart[Math.floor(Math.random() * messageComponents.firstPart.length)];
     selectSecondPart = messageComponents.secondPart[Math.floor(Math.random() * messageComponents.secondPart.length)];
@@ -11,4 +13,5 @@ function createRandomMessage() {
     console.log(`${selectFirstPart} ${selectSecondPart} ${selectThirdPart}.`);
 }
 
+// Call function
 createRandomMessage();
